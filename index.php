@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Johannes Kümmel">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 		<title>Ask a Question?</title>
 	</head>
 	<body>
@@ -44,6 +44,7 @@
 				</div>
 			</form>
 		</div>
+        <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
