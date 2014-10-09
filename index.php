@@ -19,7 +19,10 @@
       		</div>
     	</div>
     	<div class="container">
-    		<?php include "include/send.php"; ?>
+    		<?php
+            include "config/config.php";
+            include "include/send.php";
+            ?>
 			<form method="post" role="form">
 				<div class="row">
 					<div class="col-xs-12">
@@ -27,7 +30,7 @@
 							<div class="well">
 								<div class="form-group">
 									<label class="control-label" for="message">Message</label>
-									<input type="text" class="form-control" id="message" placeholder="Message">
+									<input type="text" class="form-control" name="message" id="message" placeholder="Message">
 								</div>
 								<div class="form-group">
 									<button type="submit"  name="submit" class="btn btn-success">Send</button>
