@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
 
     $timestamp = time();
     $spamtimer = $timestamp - SPAMTIMER;
+    $duplicatetimer = $timestamp - DUPLICATTIMER;
     // Connect to DB
     $DB = new PDO('mysql:host='.DB_HOST.';dbname='.DB_DB.';charset=utf8', DB_USER, DB_PW);
 
@@ -34,8 +35,8 @@ if (isset($_POST['submit'])) {
 
     // Spam by ip
     if ($status == 0) {
-        $query = $DB->prepare("SELECT ip FROM questions WHERE ip = ? and question = ? LIMIT 1");
-        if ($query->execute(array($ip, $message))) {
+        $query = $DB->prepare("SELECT ip FROM questions WHERE ip = ? and question = ? and timestamp > ? LIMIT 1");
+        if ($query->execute(array($ip, $message, $duplicatetimer))) {
             $row = $query->fetchAll();
             if ($row) {
                 $status = 4;
@@ -51,7 +52,7 @@ if (isset($_POST['submit'])) {
     }
     status($status);
 
-    var_dump($_POST);
+    //var_dump($_POST);
 
 }
 
@@ -88,7 +89,7 @@ function status($status){
                     $error = "Please enter a question or a comment!";
                     break;
                 case 4:
-                    $error = "You have already sent this message!";
+                    $error = "You have already sent this message, you must wait ".DUPLICATTIMER." seconds before sending it again!";
                     break;
                 case 5:
                     $error = "You have to wait ".SPAMTIMER." seconds between two submitions!";
