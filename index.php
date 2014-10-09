@@ -11,26 +11,26 @@
 		<title>Ask a Question?</title>
 	</head>
 	<body>
-		<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar navbar-default navbar-static-top">
       		<div class="container">
         		<div class="navbar-header">
           			<a href="#" class="navbar-brand">Ask a Question?</a>
         		</div>
       		</div>
     	</div>
-    	<div class="container" ng-controller="panelController">
+    	<div class="container">
+    		<?php include "include/send.php"; ?>
 			<form method="post" role="form">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="">Message</h2>
 						<fieldset>
 							<div class="well">
 								<div class="form-group">
-									<label class="control-label" for="inputMessageTitle">Message</label>
-									<input type="text" class="form-control" id="inputMessageTitle" placeholder="Message">
+									<label class="control-label" for="message">Message</label>
+									<input type="text" class="form-control" id="message" placeholder="Message">
 								</div>
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Send</button>
+									<button type="submit"  name="submit" class="btn btn-success">Send</button>
 								</div>
 							</div>
 							<div class="col-xs-12">
