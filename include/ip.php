@@ -15,6 +15,9 @@ function get_ip() {
     $ipaddress = getenv('REMOTE_ADDR');
     else
     $ipaddress = 0;
+    if($ipaddress == 0) {
+        $ipaddress = "127.0.0.1";
+    }
     return $ipaddress;
 }
 ?>

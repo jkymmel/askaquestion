@@ -38,17 +38,7 @@
                             </tr>
                             </thead>
                             <tbody id="table">
-                            <tr>
-                                <td>1</td>
-                                <td><strong>Loading...</strong></td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td><a href="#" class="btn btn-success btn-xs">Make Visible</a></td>
-                                <td>
-                                    <a href="#" class="btn btn-warning btn-xs">Delete</a>
-                                    <a href="#" class="btn btn-danger btn-xs">Ban</a>
-                                </td>
-                            </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -57,7 +47,8 @@
         </div>
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/middlelist.js"></script>
         <script src="js/middleget.js"></script>
-        <script type="text/javascript">appendRow();</script>
+        <script type="text/javascript">getRows(timestamp);</script>
     </body>
 </html>
