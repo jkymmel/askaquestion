@@ -26,7 +26,7 @@
             <form method="post" role="form">
                 <div class="row">
                     <div class="col-xs-12">
-                        <table class="table table-striped table-hover ">
+                        <table class="table table-striped table-hover table-condensed">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -37,24 +37,13 @@
                                 <th>Delete and Ban</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="table">
                             <tr>
                                 <td>1</td>
-                                <td>Loading...</td>
+                                <td><strong>Loading...</strong></td>
                                 <td>...</td>
                                 <td>...</td>
                                 <td><a href="#" class="btn btn-success btn-xs">Make Visible</a></td>
-                                <td>
-                                    <a href="#" class="btn btn-warning btn-xs">Delete</a>
-                                    <a href="#" class="btn btn-danger btn-xs">Ban</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Loading...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td><a href="#" class="btn btn-success disabled btn-xs">Visible!</a></td>
                                 <td>
                                     <a href="#" class="btn btn-warning btn-xs">Delete</a>
                                     <a href="#" class="btn btn-danger btn-xs">Ban</a>
@@ -66,7 +55,9 @@
                 </div>
             </form>
         </div>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/middleget.js"></script>
+        <script type="text/javascript">appendRow();</script>
     </body>
 </html>
