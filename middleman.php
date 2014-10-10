@@ -43,8 +43,22 @@
                                 <td>Loading...</td>
                                 <td>...</td>
                                 <td>...</td>
+                                <td><a href="#" class="btn btn-success btn-xs">Make Visible</a></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-xs">Delete</a>
+                                    <a href="#" class="btn btn-danger btn-xs">Ban</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Loading...</td>
                                 <td>...</td>
                                 <td>...</td>
+                                <td><a href="#" class="btn btn-success disabled btn-xs">Visible!</a></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-xs">Delete</a>
+                                    <a href="#" class="btn btn-danger btn-xs">Ban</a>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
