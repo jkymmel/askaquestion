@@ -60,8 +60,8 @@ function send($ip, $message) {
     global $status;
     global $DB;
     global $timestamp;
-    $query = $DB->prepare("INSERT INTO questions (ip, question, timestamp) VALUES (?, ?, ?) ");
-    if ($query->execute(array($ip, htmlspecialchars($message), $timestamp))) {
+    $query = $DB->prepare("INSERT INTO questions (ip, question, timestamp, lastupdate) VALUES (?, ?, ?, ?) ");
+    if ($query->execute(array($ip, htmlspecialchars($message), $timestamp, $timestamp))) {
         $status = 1;
     } else {
         $status = 2;

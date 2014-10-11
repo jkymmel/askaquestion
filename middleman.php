@@ -14,7 +14,17 @@
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a href="#" class="navbar-brand">Ask a Question?</a>
+                </div>
+                <div class="navbar-collapse navbar-responsive-collapse collapse" style="height: 1px;">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -34,7 +44,7 @@
                                 <th>Timestamp</th>
                                 <th>IP</th>
                                 <th>Visible to Target</th>
-                                <th>Delete and Ban</th>
+                                <th>Delete</th>
                             </tr>
                             </thead>
                             <tbody id="table">
