@@ -13,7 +13,7 @@ ajax = function(time) {
         success: function (data) {
             console.log('yay');
             $.each(data, function (idx, obj) {
-                timestamp = obj.timestamp;
+                timestamp = obj.id;
                 console.log(obj);
                 appendRow(obj.id, obj.question, obj.timestamp, obj.ip, obj.forwarded);
             });
