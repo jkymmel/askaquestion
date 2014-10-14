@@ -15,7 +15,7 @@ ajax = function(time) {
             $.each(data, function (idx, obj) {
                 timestamp = obj.id;
                 console.log(obj);
-                appendRow(obj.id, obj.question, obj.timestamp, obj.ip, obj.forwarded);
+                appendRow(obj.id, obj.question, obj.timestamp, obj.ip);
             });
         }
     });

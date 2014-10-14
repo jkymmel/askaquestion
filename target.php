@@ -58,6 +58,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/targetlist.js"></script>
 <script src="js/targetget.js"></script>
-<script type="text/javascript">getRows(timestamp);</script>
+<script type="text/javascript">getRows(fId);</script>
 </body>
 </html>

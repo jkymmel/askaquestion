@@ -1,5 +1,5 @@
 var timestamp = 0;
-function appendRow(id, message, time, ip, forwarded) {
+function appendRow(id, message, time, ip) {
     var table = document.getElementById('table');
     var rowCount = table.rows.length;
     var row = table.insertRow(rowCount);

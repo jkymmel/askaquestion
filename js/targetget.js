@@ -3,7 +3,7 @@ ajax = function(time) {
     $.ajax({
         url: 'include/targetget.php',
         data: {
-            timestamp: time
+            fId: time
         },
         type: 'post',
         dataType: 'json',
@@ -13,9 +13,9 @@ ajax = function(time) {
         success: function (data) {
             console.log('yay');
             $.each(data, function (idx, obj) {
-                timestamp = obj.lastupdate;
+                fId = obj.fId;
                 console.log(obj);
-                appendRow(obj.id, obj.question, obj.timestamp, obj.ip, obj.forwarded);
+                appendRow(obj.id, obj.question, obj.timestamp, obj.ip);
             });
         }
     });

@@ -1,4 +1,4 @@
-var timestamp = 0;
+var fId = 0;
 function appendRow(id, message, time, ip) {
     var table = document.getElementById('table');
     var rowCount = table.rows.length;
@@ -12,7 +12,6 @@ function appendRow(id, message, time, ip) {
     row.insertCell(3).innerHTML = ip;
     row.insertCell(4).innerHTML = '<a onclick="removeRow(this)" class="btn btn-danger btn-xs">Delete</a>';
 
-    //getRows(timestamp);
 }
 function removeRow(obj) {
     var index = obj.parentNode.parentNode;
@@ -21,8 +20,8 @@ function removeRow(obj) {
     index.remove();
 }
 function getRows() {
-    ajax(timestamp);
-    setInterval( function() {ajax(timestamp)}, 5000);
+    ajax(fId);
+    setInterval( function() {ajax(fId)}, 5000);
 }
 
 function timeConverter(UNIX_timestamp){
