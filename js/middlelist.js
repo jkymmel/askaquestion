@@ -1,4 +1,5 @@
 var timestamp = 0;
+var fId = 0;
 function appendRow(id, message, time, ip) {
     var table = document.getElementById('table');
     var rowCount = table.rows.length;

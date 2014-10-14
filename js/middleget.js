@@ -19,13 +19,13 @@ ajax = function(time) {
             });
         }
     });
-    getVisible(time)
+    getVisible(fId);
 };
 getVisible = function(time) {
     $.ajax({
         url: 'include/middlevisible.php',
         data: {
-            timestamp: time
+            fId: time
         },
         type: 'post',
         dataType: 'json',
@@ -37,6 +37,7 @@ getVisible = function(time) {
             $.each(data, function (idx, obj) {
                 console.log(obj);
                 madeVisible(obj.id);
+                fId = obj.fId;
             });
         }
     });
