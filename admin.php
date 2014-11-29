@@ -11,6 +11,7 @@
     <title>Ask a Question?</title>
 </head>
 <body>
+
 <div class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -36,9 +37,6 @@
                             <button type="submit"  name="mm" class="btn btn-success">I'm a middleman!</button>
                             <button type="submit"  name="target" class="btn btn-success">I'm a target!</button>
                         </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <h6 class="text-muted"><a href="http://jkymmel.github.io" target="_blank">jkymmel.github.io</a></h6>
                     </div>
                 </fieldset>
             </div>

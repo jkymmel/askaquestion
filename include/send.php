@@ -20,7 +20,10 @@ if (isset($_POST['submit'])) {
     // Connect to DB
     $DB = new PDO('mysql:host='.DB_HOST.';dbname='.DB_DB.';charset=utf8', DB_USER, DB_PW);
 
+
+    // SPAMTIMER is disabled because of potential ip conflict
     // Spam timer
+    /*
     if ($status == 0) {
         $query = $DB->prepare("SELECT ip FROM questions WHERE ip = ? and timestamp > ? LIMIT 1");
         if ($query->execute(array($ip, $spamtimer))) {
@@ -32,6 +35,7 @@ if (isset($_POST['submit'])) {
             $status = 2;
         }
     }
+    */
 
     // Spam by ip
     if ($status == 0) {

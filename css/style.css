@@ -1,0 +1,14 @@
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -40px;
+    padding-bottom: 40px;
+}
+.footer {
+    height: 30px;
+}
+.plandr {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5em;
+    color: #222b38 !important;
+}
